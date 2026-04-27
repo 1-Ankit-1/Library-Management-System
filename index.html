@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library System</title>
+</head>
+<body>
+<h1>Library Books</h1>
+
+<a href="/add">Add Book</a>
+
+<table border="1">
+<tr>
+<th>ID</th>
+<th>Book Name</th>
+<th>Author</th>
+<th>Status</th>
+</tr>
+
+{% for book in books %}
+<tr>
+<td>{{book[0]}}</td>
+<td>{{book[1]}}</td>
+<td>{{book[2]}}</td>
+<td>{{book[3]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+</body>
+</html>
